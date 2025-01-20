@@ -11,7 +11,7 @@ import io.cucumber.java.en.When;
 
 public class CRMStepDef {
 	
-	@Before(order=1)
+	@Before(value ="@SmokeTest",order=1)
 	public void setup() {
 		System.out.println("Setup Chrome Browser");
 		
